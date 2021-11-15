@@ -1,4 +1,4 @@
 # Whitelisted PiHole
-Whitelisted PiHole combines the base PiHole docker image with the whitelist maintained here: https://github.com/anudeepND/whitelist
+Whitelisted PiHole combines the base PiHole docker image with the white list maintained here: https://github.com/anudeepND/whitelist
 
-Available on the DockerHub here: https://hub.docker.com/r/jenssels/whitelisted-pihole
+Available on the Docker Hub here: https://hub.docker.com/r/jenssels/whitelisted-pihole
