@@ -10,7 +10,7 @@ UpdateScript="/app/whitelisted_pihole/update_whitelist.sh"
 echo "[$(date)] Setting up Whitelisted PiHole"
 
 echo "[$(date)] Calling update script"
-/bin/bash $UpdateScript
+. $UpdateScript
 echo "[$(date)] Called update script"
 
 if [[ -n $UPDATE_CRON ]]; then
@@ -25,6 +25,6 @@ if [[ -n $UPDATE_CRON ]]; then
 fi
 
 echo "[$(date)] Finished setting up Whitelisted PiHole. Calling pihole entrypoint script"
-/bin/bash /s6-init
+. /s6-init
 
 exit
