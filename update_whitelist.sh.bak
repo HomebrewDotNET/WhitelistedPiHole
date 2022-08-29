@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Setup constants
-SourceDir="/src/whitelist"
-ScriptDir="$SourceDir/scripts"
+SourceDir="/src/whitelist_update"
+ScriptDir="$SourceDir/whitelist/scripts"
 WhitelistScript="$ScriptDir/whitelist.py"
 ReferralScript="$ScriptDir/referral.sh"
 GitRepo="https://github.com/anudeepND/whitelist.git"
