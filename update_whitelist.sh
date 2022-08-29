@@ -24,7 +24,7 @@ fi
 echo "[$(date)] Pulled latest whitelist scripts. Updating now"
 python3 $WhitelistScript --docker
 
-if [ ! -z $UPDATE_REFERRAL ]; then
+if [[ $UPDATE_REFERRAL == "true" ]]; then
 	echo "[$(date)] Updating white using referral list"
 	/bin/bash $ReferralScript --docker
 fi
