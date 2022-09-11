@@ -9,7 +9,7 @@ USER root
 # Install Python3
 RUN echo Installing Python3
 RUN  apt-get update -y \
-  && apt-get install -y python3 
+  && apt-get install -y apt-utils python3 
 RUN echo Installed Python3
 
 COPY entrypoint.sh /app/whitelisted_pihole/entrypoint.sh
