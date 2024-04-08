@@ -4,7 +4,6 @@ FROM pihole/pihole:latest
 ENV UPDATE_REFERRAL=false
 ENV	UPDATE_CRON="0 6 * * */7"
 
-USER root
 
 # Install Python3
 RUN echo Installing Python3
@@ -18,5 +17,3 @@ RUN chmod +x /app/whitelisted_pihole/entrypoint.sh
 RUN chmod +x /app/whitelisted_pihole/update_whitelist.sh
 
 ENTRYPOINT ["/app/whitelisted_pihole/entrypoint.sh"]
-
-USER pihole
